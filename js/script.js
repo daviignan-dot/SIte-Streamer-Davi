@@ -188,3 +188,24 @@ if (document.readyState === 'loading') {
 } else {
     initTwitchEmbed();
 }
+// Filtros da galeria
+document.querySelectorAll('[data-filter]').forEach(button => {
+    button.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        
+        // Ativar botão selecionado
+        document.querySelectorAll('[data-filter]').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        this.classList.add('active');
+        
+        // Filtrar itens
+        document.querySelectorAll('.galeria-item').forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.classList.remove('hide');
+            } else {
+                item.classList.add('hide');
+            }
+        });
+    });
+});
