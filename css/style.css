@@ -191,3 +191,42 @@ h1, h2, h3, h4, h5, h6 {
         padding: 80px 0 30px;
     }
 }
+/* Estilos específicos para a página de stream */
+.btn-discord {
+    background-color: #5865F2;
+    color: white;
+}
+
+.btn-discord:hover {
+    background-color: #4752c4;
+    color: white;
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+}
+
+.btn-instagram:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+.btn-youtube {
+    background-color: #FF0000;
+    color: white;
+}
+
+.btn-youtube:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+/* Filtros da galeria */
+.galeria-item {
+    display: block;
+}
+
+.galeria-item.hide {
+    display: none;
+}
