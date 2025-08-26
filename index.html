@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Vieira Igman - Streamer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo Davi Streamer" height="40" class="d-inline-block align-text-top">
+                Davi Streamer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogos.html">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stream.html">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <img src="img/banner.jpg" class="d-block w-100" alt="Banner Principal">
+                    <div class="carousel-caption">
+                        <h1>Davi Vieira Igman</h1>
+                        <p class="lead">Streamer da Twitch e jogador profissional</p>
+                        <a href="stream.html" class="btn btn-primary me-2">Assistir Agora</a>
+                        <a href="sobre.html" class="btn btn-outline-light">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destaques -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>Destaques</h2>
+                    <p class="lead">Confira o que há de novo no canal</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/game1.jpg" class="card-img-top" alt="Grow a Garden">
+                        <div class="card-body">
+                            <h5 class="card-title">Grow a Garden</h5>
+                            <p class="card-text">Jogando toda quarta-feira às 15h. Venha aprender a cultivar seu jardim virtual!</p>
+                            <a href="jogos.html" class="btn btn-sm btn-outline-primary">Ver Horários</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/game2.jpg" class="card-img-top" alt="Steal Brairot">
+                        <div class="card-body">
+                            <h5 class="card-title">Steal Brairot</h5>
+                            <p class="card-text">Game de aventura e estratégia toda sexta-feira às 17h. Não perca!</p>
+                            <a href="jogos.html" class="btn btn-sm btn-outline-primary">Ver Horários</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/game3.jpg" class="card-img-top" alt="Blox Fruits">
+                        <div class="card-body">
+                            <h5 class="card-title">Blox Fruits</h5>
+                            <p class="card-text">Domingos às 14h, diversão garantida no Roblox. Traga sua fruta preferida!</p>
+                            <a href="jogos.html" class="btn btn-sm btn-outline-primary">Ver Horários</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Preview -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Quem é Davi?</h2>
+                    <p>Olá! Sou Davi Vieira Igman, streamer da Twitch e estudante de Robótica no Colégio Estadual Professor Ricardo Lunardelli. Adoro jogar e compartilhar momentos divertidos com minha comunidade!</p>
+                    <p>Minhas transmissões são focadas em jogos como Grow a Garden, Steal Brairot e Blox Fruits, sempre com muita interação e diversão.</p>
+                    <a href="sobre.html" class="btn btn-primary">Saiba Mais</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/davi-perfil.jpg" alt="Davi Vieira Igman" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Davi Streamer</h5>
+                    <p>Streamer da Twitch e jogador profissional.</p>
+                    <p>Estudante de Robótica - Colégio Estadual Professor Ricardo Lunardelli</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="sobre.html" class="text-white">Sobre</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                        <li><a href="stream.html" class="text-white">Live Stream</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitch fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-discord fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Davi Vieira Igman. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
