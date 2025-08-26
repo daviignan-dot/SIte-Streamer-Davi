@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Davi Vieira Igman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo Davi Streamer" height="40" class="d-inline-block align-text-top">
+                Davi Streamer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogos.html">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stream.html">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Página Contato -->
+    <header class="hero-small bg-primary text-white">
+        <div class="container pt-5">
+            <h1 class="pt-5">Contato</h1>
+            <p class="lead">Entre em contato comigo para dúvidas, sugestões ou parcerias</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Envie uma Mensagem</h2>
+                    <p>Preencha o formulário abaixo para entrar em contato comigo. Respondo o mais rápido possível!</p>
+                    
+                    <form id="contactForm" action="processar_formulario.php" method="POST" onsubmit="return validateForm()">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto</label>
+                            <select class="form-select" id="assunto" name="assunto" required>
+                                <option value="" selected disabled>Selecione um assunto</option>
+                                <option value="Dúvida">Dúvida</option>
+                                <option value="Sugestão">Sugestão</option>
+                                <option value="Parceria">Proposta de Parceria</option>
+                                <option value="Produto">Dúvida sobre Produto</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                            <label class="form-check-label" for="terms">Concordo com os termos e condições</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações de Contato</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-envelope me-2 text-primary"></i>
+                                    <strong>E-mail:</strong> davi.ignan@escola.pr.gov.br
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fab fa-twitch me-2 text-primary"></i>
+                                    <strong>Twitch:</strong> /daviignan
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-school me-2 text-primary"></i>
+                                    <strong>Escola:</strong> Colégio Estadual Professor Ricardo Lunardelli
+                                </li>
+                            </ul>
+                            
+                            <h5 class="card-title mt-4">Redes Sociais</h5>
+                            <div class="d-flex justify-content-start">
+                                <a href="#" class="text-dark me-3"><i class="fab fa-twitch fa-2x"></i></a>
+                                <a href="#" class="text-dark me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                                <a href="#" class="text-dark me-3"><i class="fab fa-discord fa-2x"></i></a>
+                                <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Horário de Atendimento</h5>
+                            <p>Estou disponível para contato principalmente nos seguintes horários:</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Segunda a Sexta:</strong> 18h às 21h</li>
+                                <li><strong>Sábados:</strong> 14h às 18h</li>
+                                <li><strong>Domingos:</strong> 16h às 20h</li>
+                            </ul>
+                            <p class="fst-italic">* Horários sujeitos a alteração de acordo com minha agenda de streams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Davi Streamer</h5>
+                    <p>Streamer da Twitch e jogador profissional.</p>
+                    <p>Estudante de Robótica - Colégio Estadual Professor Ricardo Lunardelli</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="sobre.html" class="text-white">Sobre</a></li>
+                        <li><a href="servicos.html" class="text-white">Produtos</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitch fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-discord fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Davi Vieira Igman. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
