@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Davi Vieira Igman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo Davi Streamer" height="40" class="d-inline-block align-text-top">
+                Davi Streamer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogos.html">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stream.html">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Página Galeria -->
+    <header class="hero-small bg-primary text-white">
+        <div class="container pt-5">
+            <h1 class="pt-5">Galeria</h1>
+            <p class="lead">Fotos, conquistas e momentos especiais das minhas streams</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2>Momento dos Fãs</h2>
+                    <p class="lead">Os melhores momentos das minhas transmissões</p>
+                </div>
+            </div>
+            
+            <!-- Filtros da Galeria -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <button class="btn btn-outline-primary m-1 active" data-filter="all">Todos</button>
+                        <button class="btn btn-outline-primary m-1" data-filter="grow">Grow a Garden</button>
+                        <button class="btn btn-outline-primary m-1" data-filter="steal">Steal Brairot</button>
+                        <button class="btn btn-outline-primary m-1" data-filter="blox">Blox Fruits</button>
+                        <button class="btn btn-outline-primary m-1" data-filter="setup">Meu Setup</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Galeria de Imagens -->
+            <div class="row" id="galeria">
+                <!-- Imagem 1 -->
+                <div class="col-md-4 mb-4 galeria-item grow">
+                    <div class="card h-100">
+                        <img src="img/gallery1.jpg" class="card-img-top gallery-img" alt="Momento engraçado no Grow a Garden">
+                        <div class="card-body">
+                            <h5 class="card-title">Plantação Incrível</h5>
+                            <p class="card-text">Consegui cultivar a plantação mais rara do jogo após 5 horas de stream!</p>
+                            <small class="text-muted">Postado em: 15/08/2023</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Imagem 2 -->
+                <div class="col-md-4 mb-4 galeria-item steal">
+                    <div class="card h-100">
+                        <img src="img/gallery2.jpg" class="card-img-top gallery-img" alt="Conquista no Steal Brairot">
+                        <div class="card-body">
+                            <h5 class="card-title">Chefão Derrotado</h5>
+                            <p class="card-text">Finalmente derrotei o chefão mais difícil do Steal Brairot com a ajuda dos viewers!</p>
+                            <small class="text-muted">Postado em: 22/08/2023</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Imagem 3 -->
+                <div class="col-md-4 mb-4 galeria-item blox">
+                    <div class="card h-100">
+                        <img src="img/gallery3.jpg" class="card-img-top gallery-img" alt="Fruta lendária no Blox Fruits">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruta Lendária</h5>
+                            <p class="card-text">Consegui a fruta mais rara do Blox Fruits após 3 horas de jogo!</p>
+                            <small class="text-muted">Postado em: 05/09/2023</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Imagem 4 -->
+                <div class="col-md-4 mb-4 galeria-item setup">
+                    <div class="card h-100">
+                        <img src="img/gallery4.jpg" class="card-img-top gallery-img" alt="Meu setup de stream">
+                        <div class="card-body">
+                            <h5 class="card-title">Novo Setup</h5>
+                            <p class="card-text">Atualizei meu setup com novos equipamentos para melhorar a qualidade das streams!</p>
+                            <small class="text-muted">Postado em: 10/09/2023</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Imagem 5 -->
+                <div class="col-md-4 mb-4 galeria-item grow">
+                    <div class="card h-100">
+                        <img src="img/gallery5.jpg" class="card-img-top gallery-img" alt="Jardim completo no Grow a Garden">
+                        <div class="card-body">
+                            <h5 class="card-title">Jardim Completo</h5>
+                            <p class="card-text">Finalmente completei meu jardim com todas as plantas disponíveis no jogo!</p>
+                            <small class="text-muted">Postado em: 18/09/2023</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Imagem 6 -->
+                <div class="col-md-4 mb-4 galeria-item steal">
+                    <div class="card h-100">
+                        <img src="img/gallery6.jpg" class="card-img-top gallery-img" alt="Item raro no Steal Brairot">
+                        <div class="card-body">
+                            <h5 class="card-title">Item Lendário</h5>
+                            <p class="card-text">Encontrei o item mais raro do Steal Brairot após explorar uma masmorra secreta!</p>
+                            <small class="text-muted">Postado em: 25/09/2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Conquistas -->
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 class="text-center mb-4">Minhas Conquistas</h3>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                            <i class="fas fa-trophy fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="card-title">1000 Seguidores na Twitch</h5>
+                                            <p class="card-text">Alcancei a marca de 1000 seguidores na minha canal da Twitch!</p>
+                                            <small class="text-muted">Conquistado em: 15/09/2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                            <i class="fas fa-users fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="card-title">Comunidade Ativa</h5>
+                                            <p class="card-text">Mais de 50 pessoas simultâneas assistindo minha stream!</p>
+                                            <small class="text-muted">Conquistado em: 22/09/2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                            <i class="fas fa-gamepad fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="card-title">100 Horas de Transmissão</h5>
+                                            <p class="card-text">Completei 100 horas de transmissão ao vivo na Twitch!</p>
+                                            <small class="text-muted">Conquistado em: 30/09/2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                            <i class="fas fa-star fa-2x"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="card-title">Parceiro Twitch</h5>
+                                            <p class="card-text">Me tornei um parceiro oficial da Twitch!</p>
+                                            <small class="text-muted">Conquistado em: 05/10/2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Davi Streamer</h5>
+                    <p>Streamer da Twitch e jogador profissional.</p>
+                    <p>Estudante de Robótica - Colégio Estadual Professor Ricardo Lunardelli</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="sobre.html" class="text-white">Sobre</a></li>
+                        <li><a href="servicos.html" class="text-white">Produtos</a></li>
+                        <li><a href="contato.html" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitch fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-discord fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Davi Vieira Igman. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
