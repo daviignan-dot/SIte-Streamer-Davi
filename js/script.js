@@ -209,3 +209,34 @@ document.querySelectorAll('[data-filter]').forEach(button => {
         });
     });
 });
+// Validação do formulário de contato
+function validateForm() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value;
+    const terms = document.getElementById('terms').checked;
+    
+    // Verificar se todos os campos estão preenchidos
+    if (nome === '' || email === '' || assunto === '' || mensagem === '') {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return false;
+    }
+    
+    // Verificar se os termos foram aceitos
+    if (!terms) {
+        alert('Você deve aceitar os termos e condições para enviar o formulário.');
+        return false;
+    }
+    
+    // Validar email com regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Por favor, insira um endereço de email válido.');
+        return false;
+    }
+    
+    // Se tudo estiver correto, mostrar mensagem de sucesso
+    alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+    return true;
+}
