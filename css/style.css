@@ -230,3 +230,25 @@ h1, h2, h3, h4, h5, h6 {
 .galeria-item.hide {
     display: none;
 }
+/* Estilos específicos para a página de contato */
+.form-check-input:checked {
+    background-color: var(--twitch-purple);
+    border-color: var(--twitch-purple);
+}
+
+.hero-small {
+    padding: 100px 0 50px;
+    background: linear-gradient(135deg, var(--twitch-purple) 0%, var(--school-blue) 100%);
+}
+
+/* Estilização para os cards de informação */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
