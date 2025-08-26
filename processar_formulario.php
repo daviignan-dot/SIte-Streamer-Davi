@@ -8,10 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitiza e valida os dados do formulário
     $nome = filter_var(trim($_POST["nome"]), FILTER_SANITIZE_STRING);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $assunto_form = filter_var(trim($_POST["assunto"]), FILTER_SANITIZE_STRING);
     $mensagem = filter_var(trim($_POST["mensagem"]), FILTER_SANITIZE_STRING);
     
     // Verifica se todos os campos estão preenchidos
-    if (empty($nome) || empty($email) || empty($mensagem)) {
+    if (empty($nome) || empty($email) || empty($assunto_form) || empty($mensagem)) {
         http_response_code(400);
         echo "Por favor, preencha todos os campos.";
         exit;
@@ -28,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $corpo_email = "Você recebeu uma nova mensagem do formulário de contato do seu site:\n\n";
     $corpo_email .= "Nome: $nome\n";
     $corpo_email .= "Email: $email\n";
+    $corpo_email .= "Assunto: $assunto_form\n";
     $corpo_email .= "Mensagem:\n$mensagem\n";
     
     // Cabeçalhos do email
